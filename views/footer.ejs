@@ -1,0 +1,317 @@
+           </div> 	
+        </div>
+     </div>                  
+    </div> <!-- /Portlet -->
+  </div>  
+                    
+</div>
+   </div>
+<div class="clearfix"></div>
+<footer class="footer text-right">
+                   <div class="fw-copyright">Powered by <a href="" target="_blank" id="design"><span></span>  </a></div>
+                </footer>
+</div>
+<!--</div>
+  </section> -->
+ <script>
+            var resizefunc = [];
+            
+             $(function () {
+        $(".check_all").click(function () {
+        	
+			 $(".multiple_select_checkBox").prop('checked', $(this).prop('checked'));
+			 isCheckboxchecked();
+        });
+		
+		$(".multiple_select_checkBox").click(function () {
+			 isCheckboxchecked();
+        });
+		$(".btnSubmitTrigger").click(function () {
+				$(".multi_delete_form").submit();
+        });
+        
+        	$(".addtooffer").click(function () {
+				$(".addtooffer").submit();
+        });
+		
+    });
+        </script>
+
+
+        <!-- jQuery -->
+       <script type="text/javascript" src="/admin/assets/colorpicker/bootstrap-colorpicker.js"></script>
+
+        <script src="/admin/js/bootstrap.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+        <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+        
+        <script>
+	$(function() {
+  $("#selectState").customselect();
+});
+
+</script>
+        <script type="text/javascript">
+            $(function () {
+                $('.datetimepicker').datetimepicker({
+                    format: 'DD-MM-YYYY'
+                });
+                $('#timeSlot').datetimepicker({
+                    format: 'HH:MM'
+                });
+                $('#timeSlotDate').datetimepicker({
+                    format: 'DD-MM-YYYY'
+                });                                
+            });
+        </script>        
+        <script>
+            function goBack() {
+            window.history.back();
+            }
+        </script>
+        <script src="/admin/js/waves.js"></script>
+        <script src="/admin/js/wow.min.js"></script>
+        <script src="/admin/js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="/admin/js/jquery.scrollTo.min.js"></script>
+        <script src="/admin/assets/chat/moment-2.2.1.js"></script>
+        <script src="/admin/assets/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="/admin/assets/jquery-detectmobile/detect.js"></script>
+        <script src="/admin/assets/fastclick/fastclick.js"></script>
+        <script src="/admin/assets/jquery-slimscroll/jquery.slimscroll.js"></script>
+        <script src="/admin/assets/jquery-blockui/jquery.blockUI.js"></script>
+
+        <!-- sweet alerts -->
+        <script src="/admin/assets/sweet-alert/sweet-alert.min.js"></script>
+        <script src="/admin/assets/sweet-alert/sweet-alert.init.js"></script>
+
+        <!-- flot Chart -->
+        <script src="/admin/assets/flot-chart/jquery.flot.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.time.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.tooltip.min.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.resize.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.pie.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.selection.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.stack.js"></script>
+        <script src="/admin/assets/flot-chart/jquery.flot.crosshair.js"></script>
+
+        <!-- Counter-up -->
+        <script src="/admin/assets/counterup/waypoints.min.js" type="text/javascript"></script>
+        <script src="/admin/assets/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        
+        <!-- CUSTOM JS -->
+        <script src="/admin/js/jquery.app.js"></script>
+
+        <!-- Dashboard -->
+        <script src="/admin/js/jquery.dashboard.js"></script>
+
+        <!-- Chat -->
+        <script src="/admin/js/jquery.chat.js"></script>
+
+        <!-- Todo -->
+        <script src="/admin/js/jquery.todo.js"></script>
+  
+        <script src="/admin/assets/sweet-alert/sweet-alert.min.js"></script>
+        <script src="/admin/assets/sweet-alert/sweet-alert.init.js"></script>
+
+<script src="/admin/datatable/datatables.min.js"></script>
+
+<!-- Fab Admin for Data Table -->
+<script src="/admin/datatable/data-table.js"></script>
+<script src="/admin/custom.js"></script>
+       
+			
+<script src='/admin/src/jquery-customselect.js'></script>
+    <link href='/admin/src/jquery-customselect.css' rel='stylesheet' />
+        <script type="text/javascript">
+        //colorpicker start
+
+                $('.colorpicker-default').colorpicker({
+                    format: 'hex'
+                });
+                $('.colorpicker-rgba').colorpicker();
+
+            /* ==============================================
+            Counter Up
+            =============================================== */
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 100,
+                    time: 1200
+                });
+            });
+          
+    $(".alert").fadeTo(5000, 0).slideUp(500, function(){$(this).remove(); });
+///////////////////////////////////////////////////////////////////////////////    
+var front_data_url = document.location.origin+'/admin/';
+var front_data_url1 = document.location.origin+'/';
+$("#ItemsNum").load("");
+ function assignvendor(deliveryid,orderid){
+ 	
+ 	$.ajax({
+ 		type:"POST",
+ 		url:front_data_url.concat('deliveryboy').concat('/').concat('assign'),
+ 		data:{deliveryid:deliveryid,orderid:orderid},
+ 		 success: function(data)
+          {  
+          alert('Delivery Boy Assign Successfully'); 
+         // location.reload();
+         }
+ 	});
+ }    
+    
+        </script>
+<script type="text/javascript">
+	
+$( "#fld_product_name" ).keyup(function() {
+	var key=$("#fld_product_name").val();
+	key=key.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+    $('#fld_product_url').val(key);
+});
+
+$(".fieldname").keyup(function() {
+	var key=$(".fieldname").val();
+	key=key.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+    $('.url-key').val(key);
+});
+
+function edit_posale(qty,id)
+
+{
+  
+   //var qty = $('#qt-'+id).val();
+
+        $.ajax({
+         url:front_data_url1.concat('cart').concat('/').concat('updateCart'),
+           
+            type: "POST",
+
+            data: {qty: qty,id:id},
+ dataType: "JSON",
+            success: function(data)
+
+            {
+    
+	 
+	  $('#otpSection').html(data.msg);
+$('#myModal').modal('show');
+setTimeout(function(){ 	$('#myModal').modal('hide'); }, 3000);
+            },
+
+            error: function (jqXHR, textStatus, errorThrown)
+
+            {
+
+              // alert("error");
+
+            }
+
+        });
+
+
+
+}
+//delete cart items
+function deleteCart(id)
+
+{
+
+  // ajax delete data to database
+
+  $.ajax({
+
+url:front_data_url1.concat('cart').concat('/').concat('cartdelete'),
+      type: "POST",
+
+      dataType: "JSON",
+      data:{id:id},
+      success: function(data)
+
+      {
+
+ 
+      },
+
+      error: function (jqXHR, textStatus, errorThrown)
+
+      {
+
+        alert("error");
+
+      }
+
+  });
+
+
+
+}
+
+
+ $('.usernamecheck').change(function()
+  {
+
+  var checkname=$(this).val();
+ 
+  if(checkname!=''){
+
+  $('.usercheck').show();
+
+  var dataString = 'pincode='+ checkname;
+
+
+  $.ajax({
+
+          type: "POST",
+        url: front_data_url1+"home/check_pinCode/",
+          data: dataString,
+          cache: false,
+          success: function(data){
+			    var myObj = JSON.parse(data);
+			    
+			  
+                     if(myObj.Error==1){
+                        $('.outofDelivery').show();
+                        $('.noProblem').hide(); 
+                        $('#Pincodedisplay').css('color','red');
+                        $('button[type="submit"]').attr('disabled','disabled');
+                     }
+                      if(myObj.Error==0){
+                      	$('#suburbdata').html(myObj.suburbdata);
+                        $('.outofDelivery').hide();
+                        $('.noProblem').show(); 
+                        //
+                        $('#Pincodedisplay').css('color','green');
+                        setTimeout(function(){ 	$('#onload').modal('hide'); }, 2000);
+                        //$('#onload').modal('show');
+                        $('button[type="submit"]').removeAttr('disabled','');
+                     } 
+                    
+ $('.usercheck').html(myObj.Msg); 
+
+          }
+
+
+
+      });
+
+
+
+   }else{
+
+
+
+       $('.usercheck').html('');
+
+
+
+   }
+
+
+
+  });
+  
+  
+ 
+</script>
+<script>$( "#datepicke1" ).datepicker({ dateFormat: 'dd-mm-yy',minDate: new Date()});</script>
+</body></html>

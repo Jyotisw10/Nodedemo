@@ -1,0 +1,77 @@
+.filter-color ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: -5px;
+}
+.filter-color li{
+  display: inline;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  float: left;
+  padding: 5px;
+}
+.filter-color li label{
+  border: 1px solid #eaeaea;
+  width: 20px;
+  height: 20px;
+  padding-top: 6px;
+  padding-left: 6px;
+  float: left;
+}
+.filter-color li input[type="checkbox"] + label span.button{
+  background: none;
+  margin: 0;
+}
+.filter-color li input[type="checkbox"]:checked + label{
+    border-color: #ff3366;
+}
+.filter-size{
+  max-height: 200px;
+  overflow-y:auto; 
+}
+.filter-size li{
+  width: 50%;
+  float: left;
+}
+.check-box-list{
+  overflow: hidden;
+}
+.check-box-list li{
+  line-height: 24px;
+}
+.check-box-list label{
+  display: inline-block;
+  cursor: pointer;
+  line-height: 12px;
+}
+.check-box-list label:hover{
+  color: #ff3366;
+}
+.check-box-list .activit input[type="checkbox"]{
+  display: none;
+}
+.check-box-list input[type="checkbox"] + label span.button {
+      display:inline-block;
+      width:12px;
+      height:12px;
+      margin-right: 13px;
+      background: url("../images/checked.png") no-repeat;
+      padding: 0;
+      border: none;
+}
+.check-box-list input[type="checkbox"]:checked + label span.button{
+    background: #ff3366 url("../images/checked.png") no-repeat center center;
+    
+
+}
+.check-box-list input[type="checkbox"]:checked + label{
+  color: #ff3366;
+}
+.check-box-list label span.count{
+  color: #a4a4a4;
+  margin-left: 2px;
+}
